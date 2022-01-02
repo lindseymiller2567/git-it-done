@@ -23,7 +23,7 @@ var formSubmitHandler = function (event) {
 // once user searches for repo by username, this function finds the username github
 var getUserRepos = function (user) { // why do we put user here in the argument? user is not defined anywhere? 
     // format the github api url
-    var apiUrl = "http://api.github.com/users/" + user + "/repos";
+    var apiUrl = "https://api.github.com/users/" + user + "/repos";
 
     // make a request to the url
     fetch(apiUrl).then(function (response) {
